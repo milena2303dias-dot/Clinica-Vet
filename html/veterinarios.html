@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Veterinários | VetAgenda</title>
+
+    <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/veterinarios.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>VetAgenda</h1>
+            <p>Gestão veterinária simplificada</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="tutores.html">Tutores</a>
+            <a href="pets.html">Pets</a>
+            <a href="veterinarios.html" class="ativo">Veterinários</a>
+            <a href="agendamentos.html">Agendamentos</a>
+        </nav>
+    </header>
+
+    <main class="pagina-cadastro">
+
+        <h2 class="titulo-pagina">Cadastro de Veterinários</h2>
+
+        <p class="descricao-pagina">
+            Cadastre os profissionais responsáveis pelos atendimentos da clínica.
+        </p>
+
+        <section class="formulario-container">
+
+            <form action="#" method="post">
+
+                <div class="campo">
+                    <label for="crmv">CRMV:</label>
+                    <input
+                        type="text"
+                        id="crmv"
+                        name="crmv"
+                        maxlength="20"
+                        placeholder="Digite o número do CRMV"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="nome">Nome completo:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        maxlength="100"
+                        placeholder="Digite o nome do veterinário"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        maxlength="15"
+                        placeholder="(00) 00000-0000"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="especialidade">Especialidade:</label>
+                    <input
+                        type="text"
+                        id="especialidade"
+                        name="especialidade"
+                        maxlength="100"
+                        placeholder="Digite a especialidade"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="status">Status:</label>
+                    <select id="status" name="status" required>
+                        <option value="" disabled selected>
+                            Selecione o status
+                        </option>
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+                </div>
+
+                <div class="botoes-formulario">
+                    <button type="reset" class="botao-limpar">
+                        Limpar
+                    </button>
+
+                    <button type="submit" class="botao-cadastrar">
+                        Cadastrar veterinário
+                    </button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <div class="informacao-cadastro">
+            <p>
+                <strong>Importante:</strong> somente veterinários ativos
+                deverão ser considerados para novos agendamentos.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>VetAgenda - Sistema de Gerenciamento de Agendamentos Veterinários</p>
+    </footer>
+
+</body>
+</html>
