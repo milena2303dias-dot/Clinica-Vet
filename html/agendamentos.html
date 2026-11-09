@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos | VetAgenda</title>
+
+    <link rel="stylesheet" href="CSS/geral.css">
+    <link rel="stylesheet" href="CSS/agendamentos.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>VetAgenda</h1>
+            <p>Gestão veterinária simplificada</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="tutores.html">Tutores</a>
+            <a href="pets.html">Pets</a>
+            <a href="veterinarios.html">Veterinários</a>
+            <a href="agendamentos.html" class="ativo">Agendamentos</a>
+        </nav>
+    </header>
+
+    <main class="pagina-cadastro">
+
+        <h2 class="titulo-pagina">Agendamento de Consultas</h2>
+
+        <p class="descricao-pagina">
+            Organize os atendimentos e acompanhe os agendamentos da clínica.
+        </p>
+
+        <section class="formulario-container">
+
+            <form action="#" method="post">
+
+                <div class="campo">
+                    <label for="tutor">Tutor responsável:</label>
+                    <select id="tutor" name="tutor" required>
+                        <option value="" disabled selected>
+                            Selecione o tutor
+                        </option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="pet">Pet:</label>
+                    <select id="pet" name="pet" required>
+                        <option value="" disabled selected>
+                            Selecione o pet
+                        </option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="veterinario">Veterinário:</label>
+                    <select id="veterinario" name="veterinario" required>
+                        <option value="" disabled selected>
+                            Selecione o veterinário
+                        </option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data:</label>
+                    <input
+                        type="date"
+                        id="data"
+                        name="data"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="hora">Horário:</label>
+                    <input
+                        type="time"
+                        id="hora"
+                        name="hora"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="motivo">Motivo da consulta:</label>
+                    <textarea
+                        id="motivo"
+                        name="motivo"
+                        rows="4"
+                        maxlength="255"
+                        placeholder="Descreva o motivo do atendimento"
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="status">Status do agendamento:</label>
+                    <select id="status" name="status" required>
+                        <option value="" disabled selected>
+                            Selecione o status
+                        </option>
+                        <option value="agendado">Agendado</option>
+                        <option value="concluido">Concluído</option>
+                        <option value="cancelado">Cancelado</option>
+                    </select>
+                </div>
+
+                <div class="botoes-formulario">
+                    <button type="reset" class="botao-limpar">
+                        Limpar
+                    </button>
+
+                    <button type="submit" class="botao-cadastrar">
+                        Cadastrar agendamento
+                    </button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <div class="informacao-cadastro">
+            <p>
+                <strong>Importante:</strong> cada agendamento deve estar
+                vinculado a um tutor responsável, um pet e um veterinário.
+                Verifique a disponibilidade antes de marcar uma consulta.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>VetAgenda - Sistema de Gerenciamento de Agendamentos Veterinários</p>
+    </footer>
+
+</body>
+</html>
